@@ -13,3 +13,13 @@ TASKS:
 TASKS:
 - [2.1] Create AWS S3 Bucket and BucketName Class
 - [2.2] Create Service to store files to the Bucket
+
+### STORY 3: [MODEL]
+TASKS:
+- [3.1] Create UserProfile Model
+- [3.2] Create fake Database to return fake UserProfiles
+
+### STORY 4: [CONTROLLER]
+TASKS:
+- [4.1] Create REST API Controller
+
