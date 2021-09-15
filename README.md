@@ -16,6 +16,7 @@ TASKS:
 - [2.2] Create UserProfile Model Entity
 - [2.3] Create fake DB Repository to return fake UserProfiles
 - [2.4] Create REST API Controller and Service Layers
+- [2.5] Implement the file upload End-point
 
 
 
