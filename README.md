@@ -8,18 +8,12 @@
 ### STORY 1: [INITIALIZING]
 TASKS:
 - [1.1] Create Spring Boot Project, Java AWS SDK dependency and AmazonConfig
+- [1.2] Create AWS S3 Bucket and BucketName Class
 
-### STORY 2: [BUCKET]
+### STORY 2: [SERVICE]
 TASKS:
-- [2.1] Create AWS S3 Bucket and BucketName Class
-- [2.2] Create Service to store files to the Bucket
-
-### STORY 3: [MODEL]
-TASKS:
-- [3.1] Create UserProfile Model
-- [3.2] Create fake Database to return fake UserProfiles
-
-### STORY 4: [CONTROLLER]
-TASKS:
-- [4.1] Create REST API Controller
+- [2.1] Create Service to store files to the Bucket
+- [2.2] Create UserProfile Model Entity
+- [2.3] Create fake DB Repository to return fake UserProfiles
+- [2.4] Create REST API Controller
 
