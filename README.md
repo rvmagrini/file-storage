@@ -1,7 +1,7 @@
 # File Storage Application 
 ## using Spring Boot, React and AWS S3
 
-## Development Process:
+### Development Process:
 
 ### STORY 1: [INITIALIZING]
 TASKS:
@@ -20,3 +20,5 @@ TASKS:
 TASKS:
 - [3.1] Create React App and install Axios
 - [3.2] Connect React with REST API
+- [3.3] Render User Profile Data
+- [3.4] Install and implement React-Dropzone
