@@ -18,5 +18,5 @@ TASKS:
 
 ### STORY 3: [WEB]
 TASKS:
-- [3.1] Create React App
+- [3.1] Create React App and install Axios
 - [3.2] Connect React with REST API
