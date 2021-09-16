@@ -1,9 +1,7 @@
-# File Storage Application using Spring Boot, React and AWS S3
-
-
+# File Storage Application 
+## using Spring Boot, React and AWS S3
 
 ## Development Process:
-
 
 ### STORY 1: [INITIALIZING]
 TASKS:
@@ -18,5 +16,7 @@ TASKS:
 - [2.4] Create REST API Controller and Service Layers
 - [2.5] Implement the file upload End-point
 
-
-
+### STORY 3: [WEB]
+TASKS:
+- [3.1] Create React App
+- [3.2] Connect React with REST API
