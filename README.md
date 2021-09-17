@@ -3,12 +3,12 @@
 
 ### Development Process:
 
-### STORY 1: [INITIALIZING]
+### 1: [INITIALIZING]
 TASKS:
 - [1.1] Create Spring Boot Project, Java AWS SDK dependency and AmazonConfig
 - [1.2] Create AWS S3 Bucket and BucketName Class
 
-### STORY 2: [SERVICE-API]
+### 2: [SERVICE-API]
 TASKS:
 - [2.1] Create Service to store files to the Bucket
 - [2.2] Create UserProfile Model Entity
@@ -16,9 +16,10 @@ TASKS:
 - [2.4] Create REST API Controller and Service Layers
 - [2.5] Implement the file upload End-point
 
-### STORY 3: [WEB]
+### 3: [WEB]
 TASKS:
 - [3.1] Create React App and install Axios
 - [3.2] Connect React with REST API
 - [3.3] Render User Profile Data
 - [3.4] Install and implement React-Dropzone
+- [3.5] Implement UI logic to send files to the server
