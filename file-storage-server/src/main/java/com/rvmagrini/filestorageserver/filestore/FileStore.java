@@ -1,5 +1,6 @@
 package com.rvmagrini.filestorageserver.filestore;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Optional;
@@ -10,6 +11,9 @@ import org.springframework.stereotype.Service;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.S3Object;
+import com.amazonaws.services.s3.model.S3ObjectInputStream;
+import com.amazonaws.util.IOUtils;
 
 @Service
 public class FileStore {
@@ -37,9 +41,18 @@ public class FileStore {
 		
 		try {
 			s3.putObject(path, fileName, inputStream, metadata);
-			System.out.println("*******  SUCCESSFULLY SAVED  ********");
+			System.out.println("**** SUCCESSFULLY SAVED ****");
 		} catch (AmazonServiceException e) {
 			throw new IllegalStateException("Failed to store file to AWS S3", e);
+		}
+	}
+
+	public byte[] download(String path, String key) {
+		try {
+			S3Object object = s3.getObject(path, key);
+			return IOUtils.toByteArray(object.getObjectContent());
+		} catch (AmazonServiceException | IOException e) {
+			throw new IllegalStateException("Failed to download file from S3", e);
 		}
 	}
 

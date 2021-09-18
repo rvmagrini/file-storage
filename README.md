@@ -26,5 +26,9 @@ TASKS:
 
 ### 4: [SERVICE-DB]
 TASKS:
-- [4.1] Validate and insert the file into S3 Bucket
-- [4.2] 
+- [4.1] Validate and insert files into AWS-S3 Bucket
+
+### 5: [DB-WEB]
+TASKS:
+[5.1] Implement service to download image stored in AWS-S3
+[5.2] Implement download image on frontend
