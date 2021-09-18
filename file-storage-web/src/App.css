@@ -13,7 +13,13 @@ h1 {
 }
 
 .profile-box {
-  margin: 3rem 0;
+  margin: 5rem 0;
+}
+
+img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 30%;
 }
 
 .drop-box {
