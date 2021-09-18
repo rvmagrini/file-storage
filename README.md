@@ -23,3 +23,8 @@ TASKS:
 - [3.3] Render User Profile Data
 - [3.4] Install and implement React-Dropzone
 - [3.5] Implement UI logic to send files to the server
+
+### 4: [SERVICE-DB]
+TASKS:
+- [4.1] Validate and insert the file into S3 Bucket
+- [4.2] 

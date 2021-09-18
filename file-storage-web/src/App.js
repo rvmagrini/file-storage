@@ -28,10 +28,7 @@ const UserProfiles = () => {
       <div key={index} className="profile-box">
         <h1>{userProfile.username}</h1>
         <p>{userProfile.userProfileId}</p>
-        <div className="drop-box">
         <Dropzone {...userProfile} />
-        </div>
-        
       </div>
     )
   });
@@ -64,11 +61,12 @@ function Dropzone( {userProfileId} ) {
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
   return (
-    <div {...getRootProps()}>
+    <div className="drop-box" {...getRootProps()}>
       <input {...getInputProps()} />
       {
         isDragActive ?
-          <p>Drop the files here ...</p> :
+          <p>Drop the files here ...</p>
+          :
           <p>Drag 'n' drop some files here, or click to select files</p>
       }
     </div>
@@ -79,9 +77,7 @@ function Dropzone( {userProfileId} ) {
 function App() {
   return (
     <div className="App">
-
       <UserProfiles />
-      
     </div>
   );
 }
